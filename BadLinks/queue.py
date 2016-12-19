@@ -2,14 +2,14 @@
 class Queue:
 
     def push(self, el):
-      if el in self.__list:
-        return
-      self.__length += 1
-      self.__list.append(el)
+        if el in self.__list:
+            return
+        self.__length += 1
+        self.__list.append(el)
 
     def pop(self):
         if self.empty():
-          return
+            return
         self.__pos += 1
         return self.__list[self.__pos - 1]
 

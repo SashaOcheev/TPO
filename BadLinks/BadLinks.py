@@ -11,11 +11,11 @@ class BadLinks:
 
     def _handleResource(self):
         while (not(self.__queue.isEnd())):
-            currentURL = self.__queue.pop()
-            if (rsrc in currentURL):
-                links = currentURL.GetAllLinks()
-                for i in links:
-                    queue.push(Link(i))
+        currentURL = self.__queue.pop()
+        if (rsrc in currentURL):
+            links = currentURL.GetAllLinks()
+        for i in links:
+            queue.push(Link(i))
         print(queue.length())
         
 

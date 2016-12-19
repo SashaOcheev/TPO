@@ -1,23 +1,24 @@
-from urllib import parse, request
-import requests
 from queue import Queue
 from link import Link
-from bs4 import BeautifulSoup
-import re
-import pprint
 
-#soup = BeautifulSoup(html, 'html.parser')
-#href_and_src = soup.find_all(href = True)
 
-def FindAllLinks(url):
-    response = requests.get(url)
-    print(response.status_code)
-    html = (response.content).lower()
-    hrefList = re.findall(b'href="(.*?)"', html)
-    srcList = re.findall(b'src="(.*?)"', html)
-    allLinkList = hrefList + srcList
-    for i in range(len(allLinkList)):
-        print(str(i) + ': ' + str(allLinkList[i]))
+class BadLinks:
+    def __init__(self, rsrc):
+        self.__rsrc = rsrc
+        self.__queue = Queue()
+        self.__queue.push(Link(self.rsrc))
+        self._handleResource()
 
-queue = Queue()
-t = FindAllLinks('http://testingcourse.ru/links/page8.html')
+    def _handleResource(self):
+        while (not(self.__queue.isEnd())):
+            currentURL = self.__queue.pop()
+            if (rsrc in currentURL):
+                links = currentURL.GetAllLinks()
+                for i in links:
+                    queue.push(Link(i))
+        print(queue.length())
+        
+
+#t = BadLinks('http://testingcourse.ru/links/')
+t = Queue()
+t.push(1)

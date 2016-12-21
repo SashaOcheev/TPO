@@ -1,0 +1,17 @@
+b'http://testingcourse.ru/links/' 200
+b'http://testingcourse.ru/links/page1.html' 200
+b'http://testingcourse.ru/links/page2.html' 200
+b'http://www.yandex.ru' 200
+b'http://testingcourse.ru/links/index.html' 200
+b'http://testingcourse.ru/links/page3.html' 200
+b'http://testingcourse.ru/links/page5.html' 200
+b'http://testingcourse.ru/links/page4.html' 200
+b'http://testingcourse.ru/links/page6.html' 200
+b'http://testingcourse.ru/links/page7.html' 200
+b'http://volgatech.net' 200
+b'http://testingcourse.ru/' 200
+b'http://testingcourse.ru/links/termopasta.png' 200
+b'http://testingcourse.ru/links/page8.html' 200
+b'http://testingcourse.ru/links/page9.html' 200
+b'http://testingcourse.ru/links/page10.html' 200
+b'http://www.google.com' 200

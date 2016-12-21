@@ -1,8 +1,8 @@
 
-class Queue:
-
+class MyQueue:
+    
     def push(self, el):
-        if el in self.__list:
+        if ((el in self.__list) or not(el)):
             return
         self.__length += 1
         self.__list.append(el)
@@ -24,6 +24,9 @@ class Queue:
 
     def empty(self):
         return self.length() == 0
+
+    def reset(self):
+        self.__pos = 0
 
     __list = []
     __pos = 0

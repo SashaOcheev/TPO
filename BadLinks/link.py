@@ -12,8 +12,11 @@ class Link:
             self.__response = requests.get(ref)
             self.__status_code = self.__response.status_code
 
-    def getRef(self):
+    def getByteRef(self):
         return self.__ref
+
+    def getUtfRef(self):
+        return self.__ref.decode('utf-8')
 
     def getStatusCode(self):
         return self.__status_code
@@ -32,10 +35,10 @@ class Link:
         return linksList
 
     def __eq__(self, other):
-        return (self.getRef() == other.getRef())
+        return (self.getByteRef() == other.getByteRef())
 
     def __ne__(self, other):
-        return (self.getRef() != other.getRef())
+        return (self.getByteRef() != other.getByteRef())
 
     def isWorking(self):
         if (self.__status_code == 'skip'):

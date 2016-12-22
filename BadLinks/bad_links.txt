@@ -1,11 +1,11 @@
-b"javascript:alert('hello');" skip
-b'http://testingcourse.ru/links/page.html' 404
-b'http://testingcourse.ru/links/page12.html' 404
-b'http://testingcourse.ru/links/page13.html' 404
-b'http://testingcourse.ru/links/image.jpg' 404
-b'http://testingcourse.ru/links/page11.html' 404
-b'http://testingcourse.ru/links/trololo' 404
-b'http://testingcourse.ru/links/page20.html' 404
-b'http://testingcourse.ru/links/page15.html' 404
-b'http://testingcourse.ru/links/page16.html' 404
-b'http://testingcourse.ru/links/page17.html' 404
+javascript:alert('hello'); - status: skip
+http://testingcourse.ru/links/page.html - status: 404
+http://testingcourse.ru/links/page12.html - status: 404
+http://testingcourse.ru/links/page13.html - status: 404
+http://testingcourse.ru/links/image.jpg - status: 404
+http://testingcourse.ru/links/page11.html - status: 404
+http://testingcourse.ru/links/trololo - status: 404
+http://testingcourse.ru/links/page20.html - status: 404
+http://testingcourse.ru/links/page15.html - status: 404
+http://testingcourse.ru/links/page16.html - status: 404
+http://testingcourse.ru/links/page17.html - status: 404
